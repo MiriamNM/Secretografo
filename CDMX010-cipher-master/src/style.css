@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sacramento&display=swap');
+
+body {
+    background-color: #8B0A58;
+    font-family: Sacramento;
+    color: #F7F700; 
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    background: #D4B413;
+    margin: 10px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto;
+    border: none;
+}
+
+a {
+    background-color: #8B0A58;
+    background: ;
+    outline: none;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: medium;
+    font-weight: 600; 
+}
+
+img {
+    width: 35%;
+} 
+
+.secretImage {
+    display: flex;
+    flex-direction: column;
+}
+
+#secret {
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+}
+
+#answer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+}
+
+.mensajeReal {
+    height: 18pt;
+    border-radius: 2px;
+    border: 1px black;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: Sacramento;
+    color: #000000; 
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+
+  }
+
+#message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+}
+
+.mensajeFalso {   
+    height: 18pt;
+    border-radius: 2px;
+    border: 1px black;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: Sacramento;
+    color: #000000; 
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+  }
+
+#secretMessage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+}
+
+#farewell{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding: 0px 300px;
+    text-align: center;
+}
