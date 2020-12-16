@@ -1,40 +1,40 @@
 const cipher = {
      
-
-  encode: function (offset,secret){8
-   
+  encode: (theOffset, theMessage) => {
     let caracters = [];
-    let result = secret.toUpperCase(); 
-    let total=null
-      for (var i = 0; i < result.length; i++){
-        caracters[i]= result.charAt(i).charCodeAt(0);
-        if (caracters[i] >= 65 && caracters[i] <= 90){
-          let ubication= (caracters[i]-65+offset)%26+65; 
-          
-        }
-        total= String.fromCharCode(caracters[i]);
-      };
-      return "hola soy miriam"
-      },
+    let valor = theMessage.toUpperCase();
+    let change = parseInt(theOffset);
+    let total = [];
+  
+    for (var i = 0; i < valor.length; i++) {
+      caracters.push(valor.charAt(i).charCodeAt(0));
+      console.log(caracters)
+
+      if (caracters[i] >= 65 && caracters[i] <= 90) {
+        let ubication = (caracters[i] - 65 + change) % 26 + 65;
+        console.log(ubication)
+        total = String.fromCharCode(caracters[i]);
+        console.log(total)
+      }
+      }
+      return caracters
+    },
     
 
-  /*decode: function (){
-    let secret = document.getElementById('writeMessage');
-    let realSecret = document.getElementById('realMessage'); 
-
-    result = secret.value.toUpperCase();
-    var caracters = result.split('');
+  decode: (theOffset, theFalse) => {
+   
+    result = theFalse.toUpperCase();
+    var caracters = result.join('');
 
       for (var i=0; i<caracters.length; i++){
-      caracters[i] = String.fromCharCode(caracters[i]);
-      if (caracters[i] >= 65 && caracters[i] <= 90){
-        let withOffset = parseInt (withOffset.value);
-        let ubication= (caracters[i]+65-withOffset)%26-65; 
-        
-      };
-      return caracters[i];
+        caracters[i] = String.fromCharCode(caracters[i]);
+          if (caracters[i] >= 65 && caracters[i] <= 90){
+            change = parseInt (-(theOffset));
+            ubication= (caracters[i]-65-withOffset)%26+65;   
       }
-}*/
+      }
+      return caracters
+ },
 }
   export default cipher;
  

@@ -20,8 +20,16 @@
     </div>
 
     <div id='welcome'>
+      <div class="welcomeImage">
+      <img src='assets/sticker-welcome-mo.png'/>
+      <img src='assets/sticker-welcome-na.png'/>
+      </div>
       <h2>¡Felicidades, descubriste la reina secreta!</h2>
       <button  class='second' onclick='look()' onclick='hide()'> <a href='#answer'>Escribe tu secreto</a></button><!--boton de crear mensaje-->
+      <div class="welcomeImage">
+      <img src='assets/sticker-welcome-am.png'/>
+      <img src='assets/sticker-welcome-ne.png'/>
+      </div>
     </div>
     
     <div id='answer'>
@@ -31,24 +39,34 @@
         <label for='number'>Números que cifrara</label>
         <input id='offset' type='number' id='number' name='amount' value='1' min='0' max='90'>
       </p>
-      <button id='boton1' class='third' onclick='cipher.encode();' onclick='look()' onclick='hide()'> <a href='#message'>Terminado</a></button><!--boton de message-->
+      <div class="answerImage"
+      <button id='boton1' onclick='cipher.encode(theOffset, theMessage);'> <a href='#message'>Terminado</a></button><!--boton de message-->
+      <img src='assets/sticker-ne-secret.png'/>
+      </div>
     </div>
 
     <div id='message'>
-      <div id='falseMessage' class='mensajeFalso' ></div><!--mensaje encriptado-->
-      <button id='boton2' class='fourth' onclick='cipher.decode();' onclick='look()' onclick='hide()'> <a href='#secretMessage'>Decifrar secreto</a></button><!--boton de secretMessage-->
+      <div id='falseMessage' class='mensajeFalso'></div><!--mensaje encriptado-->
+      <button id='boton2' onclick='cipher.decode(theOffset, theFalse);'> <a href='#secretMessage'>Decifrar secreto</a></button><!--boton de secretMessage-->
     </div> 
 
     <div id='secretMessage'>
       <h2>El secreto es:</h2>
-      <div id='realMessage' class='mensajeReal' ></div><!--mensaje real-->
-      <button class='fith' onclick='look()' onclick='hide()'> <a href='#farewell'>Guardado</a></button><!--boton de volver al inicio-->
+      <div id='realMessage' class='mensajeReal'></div><!--mensaje real-->
+      <div class="secretMessageImage">
+      <img src='assets/sticker-az-secret.png'/>
+      <button> <a href='#farewell'>Guardado</a></button><!--boton de volver al inicio-->
+      </div>
     </div>
 
     <div id='farewell'>
       <h2>¡Secreto guardado!</h2>
       <h3>Gracias</h3>
-      <button class='sixth' onclick='look()' onclick='hide()'> <a href='#secret'>Volver al inicio</a></button><!--boton de ver mensaje-->    
+      <button> <a href='#secret'>Volver al inicio</a></button><!--boton de ver mensaje-->    
+      <div class="farewellImage">
+      <img src='assets/sticker-farewell-na.png'/>
+      <img src='assets/sticker-farewell-am.png'/>
+    </div>
     </div>
 
     <script src='index.js' type='module'></script>

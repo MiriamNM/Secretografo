@@ -41,31 +41,43 @@ img {
 }
 
 #secret {
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
     font-size: xx-large;
+    border: dotted #F7F700;
+}
+
+.welcomeImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #welcome{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
+    border: dotted #F7F700;
+}
+
+.answerImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #answer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
+    border: dotted #F7F700;
 }
 
-.mensajeReal {
+.mensajeFalso {
     height: 18pt;
     border-radius: 2px;
     border: 1px black;
@@ -83,12 +95,13 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
+    border: dotted #F7F700;
 }
 
-.mensajeFalso {   
+.mensajeReal {   
     height: 18pt;
     border-radius: 2px;
     border: 1px black;
@@ -101,20 +114,34 @@ img {
     margin: 0;
   }
 
+.secretMessageImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
 #secretMessage{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
+    border: dotted #F7F700;
 }
+
+.farewellImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
 
 #farewell{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:0px;
+    margin:5px 10px;
     padding: 0px 300px;
     text-align: center;
+    border: dotted #F7F700;
 }
