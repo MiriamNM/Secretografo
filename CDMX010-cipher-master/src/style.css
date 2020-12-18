@@ -17,23 +17,42 @@ button{
     text-decoration: none;
     font-family: Roboto;
     border: none;
+    border-radius: 4px;
+    outline: none;
 }
 
 a {
     background-color: #8B0A58;
-    background: ;
-    outline: none;
     text-decoration: none;
     padding: 5px 5px;
     color: #ffffff;
     font-family: Roboto;
     font-size: medium;
     font-weight: 600; 
+    border-radius: 4px;
+    margin:0;
+    padding: 0;
+    outline: none;
 }
 
 img {
     width: 35%;
 } 
+
+textarea {
+    border-radius: 4px;
+    margin:0;
+    padding: 0;
+    outline: none;
+    border: 1px black;
+    background-color: #ffffff;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #000000; 
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+      }
 
 .secretImage {
     display: flex;
@@ -41,11 +60,14 @@ img {
 }
 
 #secret {
-    margin:5px 10px;
-    padding: 0px 300px;
     text-align: center;
     font-size: xx-large;
     border: dotted #F7F700;
+    border-radius: 2px;
+    Box-sizing: #secret;
+    margin:0;
+    padding: 0;
+    outline: none;
 }
 
 .welcomeImage {
@@ -77,20 +99,6 @@ img {
     border: dotted #F7F700;
 }
 
-.mensajeFalso {
-    height: 18pt;
-    border-radius: 2px;
-    border: 1px black;
-    width: 100%;
-    background-color: #ffffff;
-    font-family: Sacramento;
-    color: #000000; 
-    font-size: x-large;
-    padding: 0;
-    margin: 0;
-
-  }
-
 #message{
     display: flex;
     justify-content: center;
@@ -102,12 +110,13 @@ img {
 }
 
 .mensajeReal {   
-    height: 18pt;
+    height: 46pt;
     border-radius: 2px;
     border: 1px black;
     width: 100%;
     background-color: #ffffff;
-    font-family: Sacramento;
+    font-family: Roboto;
+    font-weight: bold;
     color: #000000; 
     font-size: x-large;
     padding: 0;

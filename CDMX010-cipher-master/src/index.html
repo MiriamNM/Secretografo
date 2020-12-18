@@ -25,7 +25,7 @@
       <img src='assets/sticker-welcome-na.png'/>
       </div>
       <h2>¡Felicidades, descubriste la reina secreta!</h2>
-      <button  class='second' onclick='look()' onclick='hide()'> <a href='#answer'>Escribe tu secreto</a></button><!--boton de crear mensaje-->
+      <button  class='second' onclick='look()'> <a href='#answer'>Escribe tu secreto</a></button><!--boton de crear mensaje-->
       <div class="welcomeImage">
       <img src='assets/sticker-welcome-am.png'/>
       <img src='assets/sticker-welcome-ne.png'/>
@@ -40,14 +40,14 @@
         <input id='offset' type='number' id='number' name='amount' value='1' min='0' max='90'>
       </p>
       <div class="answerImage"
-      <button id='boton1' onclick='cipher.encode(theOffset, theMessage);'> <a href='#message'>Terminado</a></button><!--boton de message-->
+      <button id='boton1'> <a href='#message'>Terminado</a></button><!--boton de message-->
       <img src='assets/sticker-ne-secret.png'/>
       </div>
     </div>
 
     <div id='message'>
-      <div id='falseMessage' class='mensajeFalso'></div><!--mensaje encriptado-->
-      <button id='boton2' onclick='cipher.decode(theOffset, theFalse);'> <a href='#secretMessage'>Decifrar secreto</a></button><!--boton de secretMessage-->
+      <textarea id='falseMessage' class='mensajeFalso'rows="20" cols="50"></textarea><!--mensaje encriptado-->
+      <button id='boton2'> <a href='#secretMessage'>Decifrar secreto</a></button><!--boton de secretMessage-->
     </div> 
 
     <div id='secretMessage'>

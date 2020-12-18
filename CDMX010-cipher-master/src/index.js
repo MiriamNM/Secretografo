@@ -3,10 +3,7 @@ import cipher from './cipher.js';
 let theOffset= document.getElementById('offset');
 let theMessage = document.getElementById('writeMessage');
 let theFalse= document.getElementById('falseMessage');
-let theReal= document.getElementById('realMessage');
 let theEncode = document.getElementById('boton1');
-let theDecode2 = document.getElementById('boton2');
-
 
 
 theEncode.addEventListener ('click', function (e) {
@@ -16,10 +13,14 @@ theEncode.addEventListener ('click', function (e) {
   theFalse.innerHTML=resultado;
 });
 
+let theOffset2= document.getElementById('offset');
+let theFalse2= document.getElementById('falseMessage');
+let theReal= document.getElementById('realMessage');
+let theDecode2 = document.getElementById('boton2');
 
 theDecode2.addEventListener ('click', function (e) {
   e.preventDefault();
-  let result = cipher.decode(theOffset.value,theFalse.value);
+  let result = cipher.decode(theOffset2.value,theFalse2.value);
   console.log(result)
   theReal.innerHTML= result;
 })
