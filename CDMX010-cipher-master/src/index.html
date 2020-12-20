@@ -7,68 +7,74 @@
   </head>
   <body>
 
-    <div id='secret'>
+   <!-- Div de la pagina de presentación de la app-->
+    <div id="secret">
       <h1>Secretografo</h1>
       <h2>Una reina guardara tu secreto</h2>
-      <div class='secretImage'></div>
-      <img src='assets/sticker-ne-secret.png'/><!--imagen entre muchas que te ligue a caja2-->
-      <img src='assets/sticker-azu-secret.png'/>
-      <img src='assets/sticker-az-secret.png'/>
-      <a href='#welcome', class='fist' onclick='look()' onclick='hide()'><img src='assets/sticker-am-secret.png' /></a>
-      <img src='assets/sticker-na-secret.png'/>
-      <img src='assets/sticker-mo-secret.png'/>
+      <div class="secretImage"></div>
+      <img src="assets/sticker-ne-secret.png"/>
+      <img src="assets/sticker-azu-secret.png"/>
+      <img src="assets/sticker-az-secret.png"/>
+      <a href="#welcome" class="first"><img src="assets/sticker-am-secret.png"/></a><!--Esta imagen es el enlace para el id Welcome-->
+      <img src="assets/sticker-na-secret.png"/>
+      <img src="assets/sticker-mo-secret.png"/>
     </div>
 
-    <div id='welcome'>
+    <!-- Div de reconocimiento de que se encontro la reina secreta-->
+    <div id="welcome">
       <div class="welcomeImage">
-      <img src='assets/sticker-welcome-mo.png'/>
-      <img src='assets/sticker-welcome-na.png'/>
+      <img src="assets/sticker-welcome-mo.png"/>
+      <img src="assets/sticker-welcome-na.png"/>
       </div>
       <h2>¡Felicidades, descubriste la reina secreta!</h2>
-      <button  class='second' onclick='look()'> <a href='#answer'>Escribe tu secreto</a></button><!--boton de crear mensaje-->
+      <button  class="second"> <a href="answer">Escribe tu secreto</a></button><!--boton de crear mensaje-->
       <div class="welcomeImage">
-      <img src='assets/sticker-welcome-am.png'/>
-      <img src='assets/sticker-welcome-ne.png'/>
+      <img src="assets/sticker-welcome-am.png"/>
+      <img src="assets/sticker-welcome-ne.png"/>
       </div>
     </div>
     
-    <div id='answer'>
+    <!-- Div para escribir el secreto, eligiendo el offset-->
+    <div id="answer">
       <h2>Elige cifrado y escribe secreto</h2>
-      <textarea id='writeMessage' name="textarea" rows="20" cols="50" ></textarea><!--escribir mensaje-->
+      <textarea id="writeMessage" name="textarea" rows="20" cols="50" ></textarea><!--escribir mensaje-->
       <p>
-        <label for='number'>Números que cifrara</label>
-        <input id='offset' type='number' id='number' name='amount' value='1' min='0' max='90'>
+        <label for="number">Números que cifrara</label>
+        <input id="offset" type="number" id="number" name="amount" value="1" min="0" max="90">
       </p>
-      <div class="answerImage"
-      <button id='boton1'> <a href='#message'>Terminado</a></button><!--boton de message-->
-      <img src='assets/sticker-ne-secret.png'/>
+      <div class="answerImage">
+      <button id="boton1"> <a href="#message">Terminado</a></button><!--boton de message-->
+      <img src="assets/sticker-ne-secret.png"/>
       </div>
     </div>
+    
+    <!-- Div para ver mensaje cifrado-->
+    <div id="message">
+      <textarea id="falseMessage" class="mensajeFalso" rows="20" cols="50"></textarea><!--mensaje encriptado-->
+      <button id="boton2"> <a href="#secretMessage">Decifrar secreto</a></button><!--boton de secretMessage-->
+    </div>  
 
-    <div id='message'>
-      <textarea id='falseMessage' class='mensajeFalso'rows="20" cols="50"></textarea><!--mensaje encriptado-->
-      <button id='boton2'> <a href='#secretMessage'>Decifrar secreto</a></button><!--boton de secretMessage-->
-    </div> 
-
-    <div id='secretMessage'>
+    <!-- Div para ver mensaje real-->
+    <div id="secretMessage">
       <h2>El secreto es:</h2>
-      <div id='realMessage' class='mensajeReal'></div><!--mensaje real-->
+      <div id="realMessage" class="mensajeReal"></div><!--mensaje real-->
       <div class="secretMessageImage">
-      <img src='assets/sticker-az-secret.png'/>
-      <button> <a href='#farewell'>Guardado</a></button><!--boton de volver al inicio-->
+      <img src="assets/sticker-az-secret.png"/>
+      <button><a href="#farewell">Guardado</a></button><!--boton de volver al inicio-->
       </div>
     </div>
 
-    <div id='farewell'>
+    <!-- Div que te indica que se guardo el mensaje-->
+    <div id="farewell">
       <h2>¡Secreto guardado!</h2>
       <h3>Gracias</h3>
-      <button> <a href='#secret'>Volver al inicio</a></button><!--boton de ver mensaje-->    
+      <button id="last"><a href="secret">Volver al inicio</a></button><!--boton para volver al inicio-->    
       <div class="farewellImage">
-      <img src='assets/sticker-farewell-na.png'/>
-      <img src='assets/sticker-farewell-am.png'/>
-    </div>
+      <img src="assets/sticker-farewell-na.png"/>
+      <img src="assets/sticker-farewell-am.png"/>
+      </div>
     </div>
 
-    <script src='index.js' type='module'></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

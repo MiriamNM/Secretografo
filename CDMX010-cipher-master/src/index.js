@@ -1,5 +1,5 @@
 import cipher from './cipher.js';
-
+//Variables y evento para que se escuche al dar click en theEncode y se realice la función de encode.
 let theOffset= document.getElementById('offset');
 let theMessage = document.getElementById('writeMessage');
 let theFalse= document.getElementById('falseMessage');
@@ -12,7 +12,7 @@ theEncode.addEventListener ('click', function (e) {
   console.log(resultado)
   theFalse.innerHTML=resultado;
 });
-
+//Variables y evento para que se escuche al dar click en theDecode y se realice la función de decode.
 let theOffset2= document.getElementById('offset');
 let theFalse2= document.getElementById('falseMessage');
 let theReal= document.getElementById('realMessage');
@@ -25,11 +25,11 @@ theDecode2.addEventListener ('click', function (e) {
   theReal.innerHTML= result;
 })
 
+/*const enlace = document.getElementByClassName(first);
+let secret1 = document.getElementById('secret');
+let welcome1 = document.getElementsById('welcome');
 
-
-
-
-
-
-
-
+enlace.addEventListener ('click' , function(event){
+  e.preventDefault();
+secret1.style.display = 'none',
+welcome1.style.display = 'block',});*/

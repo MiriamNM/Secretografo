@@ -1,5 +1,5 @@
 const cipher = {
-     
+  //función para cifrar el secreto.  
   encode: (theOffset, theMessage) => {
     let caracters = [];
     let valor = theMessage.toUpperCase();
@@ -19,24 +19,7 @@ const cipher = {
       return caracters.join('');
     },
     
-/*la vieja
-          for (var i = 0; i < valor.length; i++) {
-      caracters.push(valor.charAt(i).charCodeAt(0));
-      console.log(caracters)
-
-      if (caracters[i] >= 65 && caracters[i] <= 90) {
-        let ubication = (caracters[i] - 65 + change) % 26 + 65;
-        console.log(ubication)
-        total = String.fromCharCode(caracters[i]).join;
-        console.log(total)
-      }
-      }
-      return total
-    },
-    },*/
-
-
-
+  //finción para descifrar el secreto.
   decode: (theOffset2, theFalse2) => {
     let caracters2 = [];
     let valor2 = theFalse2;
@@ -55,22 +38,7 @@ const cipher = {
       }
       return caracters2.join('');
     },
-    
-    
-    
-    /*let caracters2= [];
-    let result2 = theFalse.toUpperCase();
-    var valor2 = result2.join('');
-
-      for (var i=0; i<valor2.length; i++){
-        caracters2[i] = String.fromCharCode(valor2);
-          if (valor2 >= 65 && valor2 <= 90){
-            change2 = parseInt (-(theOffset));
-            ubication= (caracters[i]-65+change2)%26+65;   
-      }
-      }
-      return caracters
- },*/
+ 
 }
   export default cipher;
  
