@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    width: 35%;
+    width: 25%;
 } 
 
 textarea {
@@ -64,10 +64,10 @@ textarea {
     font-size: xx-large;
     border: dotted #F7F700;
     border-radius: 2px;
-    Box-sizing: #secret;
-    margin:0;
-    padding: 0;
+    margin: 10px 10px 10px 250px;
+    padding: 25px 10px 25px 10px;
     outline: none;
+    width: 50%;
 }
 
 .welcomeImage {
@@ -77,8 +77,8 @@ textarea {
 }
 
 #welcome{
-    margin:5px 10px;
-    padding: 0px 300px;
+    margin: 20px 235px 10px 230px;
+    padding: 90px 10px;
     text-align: center;
     border: dotted #F7F700;
     
@@ -94,8 +94,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:5px 10px;
-    padding: 0px 300px;
+    margin:10px 214px;
+    padding: 2px 86px;
     text-align: center;
     border: dotted #F7F700;
 }
@@ -104,8 +104,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:5px 10px;
-    padding: 0px 300px;
+    margin: 16px 210px;
+    padding: 121px 95px;
     text-align: center;
     border: dotted #F7F700;
 }
@@ -114,28 +114,29 @@ textarea {
     height: 46pt;
     border-radius: 2px;
     border: 1px black;
-    width: 100%;
+    width: 94%;
     background-color: #ffffff;
     font-family: Roboto;
     font-weight: bold;
     color: #000000; 
     font-size: x-large;
-    padding: 0;
-    margin: 0;
+    padding: 149px 5px 127px 0px;
+    margin: 0px -17px 9px 15px;
   }
 
 .secretMessageImage {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 28px 74px 20px 25px;
 } 
 
 #secretMessage{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:5px 10px;
-    padding: 0px 300px;
+    padding: 15px 16px 9px 10px;
+    margin: 18px 209px 16px 210px;
     text-align: center;
     border: dotted #F7F700;
 }
@@ -150,8 +151,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:5px 10px;
-    padding: 0px 300px;
+    margin: 8px 204px 56px 209px;
+    padding: 130px 22px 111px 14px;
     text-align: center;
     border: dotted #F7F700;
 }

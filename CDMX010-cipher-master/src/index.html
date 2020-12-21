@@ -27,7 +27,7 @@
       <img src="assets/sticker-welcome-na.png"/>
       </div>
       <h2>¡Felicidades, descubriste la reina secreta!</h2>
-      <button  class="second"> <a href="answer">Escribe tu secreto</a></button><!--boton de crear mensaje-->
+      <button  class="second"> <a href="#answer">Escribe tu secreto</a></button><!--boton de crear mensaje-->
       <div class="welcomeImage">
       <img src="assets/sticker-welcome-am.png"/>
       <img src="assets/sticker-welcome-ne.png"/>
@@ -37,20 +37,20 @@
     <!-- Div para escribir el secreto, eligiendo el offset-->
     <div id="answer">
       <h2>Elige cifrado y escribe secreto</h2>
-      <textarea id="writeMessage" name="textarea" rows="20" cols="50" ></textarea><!--escribir mensaje-->
+      <textarea id="writeMessage" name="textarea" rows="12" cols="25"></textarea><!--escribir mensaje-->
       <p>
         <label for="number">Números que cifrara</label>
-        <input id="offset" type="number" id="number" name="amount" value="1" min="0" max="90">
+        <input id="offset" type="number" class="number" name="amount" value="1" min="1" max="26">
       </p>
       <div class="answerImage">
-      <button id="boton1"> <a href="#message">Terminado</a></button><!--boton de message-->
+      <a href="#message"><button id="boton1"> Terminado</button></a><!--boton de message-->
       <img src="assets/sticker-ne-secret.png"/>
       </div>
     </div>
     
     <!-- Div para ver mensaje cifrado-->
     <div id="message">
-      <textarea id="falseMessage" class="mensajeFalso" rows="20" cols="50"></textarea><!--mensaje encriptado-->
+      <textarea id="falseMessage" class="mensajeFalso"  rows="12" cols="25"></textarea><!--mensaje encriptado-->
       <button id="boton2"> <a href="#secretMessage">Decifrar secreto</a></button><!--boton de secretMessage-->
     </div>  
 
@@ -68,7 +68,7 @@
     <div id="farewell">
       <h2>¡Secreto guardado!</h2>
       <h3>Gracias</h3>
-      <button id="last"><a href="secret">Volver al inicio</a></button><!--boton para volver al inicio-->    
+      <button id="last"><a href="#secret">Volver al inicio</a></button><!--boton para volver al inicio-->    
       <div class="farewellImage">
       <img src="assets/sticker-farewell-na.png"/>
       <img src="assets/sticker-farewell-am.png"/>
