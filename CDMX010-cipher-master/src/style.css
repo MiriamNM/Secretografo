@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    width: 25%;
+    width: 22%;
 } 
 
 textarea {
@@ -78,7 +78,7 @@ textarea {
 
 #welcome{
     margin: 20px 235px 10px 230px;
-    padding: 90px 10px;
+    padding: 110px 10px;
     text-align: center;
     border: dotted #F7F700;
     

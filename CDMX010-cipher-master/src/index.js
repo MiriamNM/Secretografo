@@ -44,6 +44,18 @@ const enlace = document.getElementById('last');
 enlace.addEventListener ('click' , function(e){
   e.preventDefault();
   document.getElementById('secret').style.display = 'block';
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('answer').style.display = 'none';
+  document.getElementById('message').style.display = 'none';
+  document.getElementById('farewell').style.display = 'none';
+  document.getElementById('secretMessage').style.display = 'none';
+})
+
+const enlace1 = document.getElementsById('first');
+
+enlace1.addEventListener ('click' , function(e){
+  e.preventDefault();
+  document.getElementById('secret').style.display = 'none';
   document.getElementById('welcome').style.display = 'block';
   document.getElementById('answer').style.display = 'block';
   document.getElementById('message').style.display = 'none';
