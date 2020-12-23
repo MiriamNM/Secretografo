@@ -35,7 +35,7 @@ theDecode2.addEventListener ('click', function (e) {
   document.getElementById('welcome').style.display = 'none';
   document.getElementById('answer').style.display = 'none';
   document.getElementById('message').style.display = 'none';
-  document.getElementById('farewell').style.display = 'block';
+  document.getElementById('farewell').style.display = 'none';
   document.getElementById('secretMessage').style.display = 'block';
 })
 
@@ -57,8 +57,20 @@ enlace1.addEventListener ('click' , function(e){
   e.preventDefault();
   document.getElementById('secret').style.display = 'none';
   document.getElementById('welcome').style.display = 'block';
-  document.getElementById('answer').style.display = 'block';
+  document.getElementById('answer').style.display = 'none';
   document.getElementById('message').style.display = 'none';
   document.getElementById('farewell').style.display = 'none';
+  document.getElementById('secretMessage').style.display = 'none';
+})
+
+const enlace2 = document.getElementsById('boton3');
+
+enlace1.addEventListener ('click' , function(e){
+  e.preventDefault();
+  document.getElementById('secret').style.display = 'none';
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('answer').style.display = 'none';
+  document.getElementById('message').style.display = 'none';
+  document.getElementById('farewell').style.display = 'block';
   document.getElementById('secretMessage').style.display = 'none';
 })
