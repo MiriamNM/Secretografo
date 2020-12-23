@@ -62,7 +62,6 @@ textarea {
 #secret {
     text-align: center;
     font-size: xx-large;
-    border: dotted #F7F700;
     border-radius: 2px;
     margin: 1px 10px 10px 283px;
     padding: 0px 117px 6px 122px;
@@ -77,10 +76,9 @@ textarea {
 }
 
 #welcome{
-    margin: 3px 253px 7px 234px;
-    padding: 0px 5px 0px 1px;
-    text-align: center;
-    border: dotted #F7F700;    
+    margin: 3px 251px 27px 234px;
+    padding: 0px 0px 11px 1px;
+    text-align: center;  
 }
 
 .answerImage {
@@ -90,14 +88,12 @@ textarea {
 }
 
 #answer{
-    display: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:10px 214px;
-    padding: 2px 86px;
+    margin: 10px 280px 7px 261px;
+    padding: 0px 90px 9px 56px;
     text-align: center;
-    border: dotted #F7F700;
 }
 
 #message{
@@ -107,7 +103,6 @@ textarea {
     margin: 16px 210px;
     padding: 121px 95px;
     text-align: center;
-    border: dotted #F7F700;
 }
 
 .mensajeReal {   
@@ -138,7 +133,6 @@ textarea {
     padding: 15px 16px 9px 10px;
     margin: 18px 209px 16px 210px;
     text-align: center;
-    border: dotted #F7F700;
 }
 
 .farewellImage {
@@ -154,5 +148,4 @@ textarea {
     margin: 8px 204px 56px 209px;
     padding: 130px 22px 111px 14px;
     text-align: center;
-    border: dotted #F7F700;
 }
